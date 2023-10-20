@@ -1,0 +1,95 @@
+@use '/public/scss/variables' as v;
+@use '/public/scss/mixins' as m;
+@use 'sass:list';
+
+.panel{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    @include m.phone{
+        flex-wrap: nowrap;
+    }
+}
+
+
+.state{
+    width: 25rem;
+    height: auto;
+    
+    @include m.phone{
+        height: calc(100vh - 12rem);
+    }
+
+    &__title{
+        background-color: v.$titleBg;
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+        box-shadow: 0rem -0.3rem 0.5rem rgba(255, 255, 255, 0.1);
+        margin: 0;
+    }
+    
+    &__title--danger{
+        border-bottom: 0.4rem solid v.$danger;
+    }
+    
+    &__title--warning{
+        border-bottom: 0.4rem solid v.$warning;
+    }
+    
+    &__title--success{
+        border-bottom: 0.4rem solid v.$success;
+    }
+    
+    &__title--info{
+        border-bottom: 0.4rem solid v.$info;
+    }
+    
+    &__title--purple{
+        border-bottom: 0.4rem solid v.$purple;
+    }
+
+    &__content{
+        position: relative;
+        width: 100%;
+        height: calc(100% - 6rem);
+        overflow-y: scroll;
+        padding: 1rem 1rem 0 1rem;
+        
+        @include m.phone{
+            height: calc(100% - 6rem);
+            padding: 1rem 2rem 0 1rem;
+            width: 105%;
+
+            &::after{
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 1rem;
+                bottom: 0;
+                width: 0.2rem;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 0.1rem;
+            } 
+            &--last{
+                width: 100%;
+                padding: 1rem 1rem 0 1rem;
+            }
+    
+            &--last::after{
+                display: none;
+            }
+        }
+
+    }
+
+}
