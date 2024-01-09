@@ -1,7 +1,9 @@
 # TodoApp
 
 ## Descripición: 
-Se presenta un tablero de tareas realizado con Javascript, HTML, Sass y Vite, en donde inicialmente se tiene dos columnas o estados por defecto, pero se pueden agregar más estados que quedaran entre los mencionados anteriormente. En la parte superior se muestra un formulario en donde se pueden registrar las tareas por realizar, se debe ingresar el titulo de la tarea, fecha limite y estado en el que se encuentra, dicho tablero cuenta con validaciones en donde no se permite eliminar estados si estos contiene tareas, además se puede arrastrar y soltar las tareas para cambiarlas de estado. 
+Se presenta un tablero de tareas realizado con ***Javascript, HTML, Sass y Vite***, en donde inicialmente se tiene dos columnas o estados por defecto, pero se pueden agregar más estados que quedaran entre los mencionados anteriormente. En la parte superior se muestra un formulario en donde se pueden registrar las tareas por realizar, se debe ingresar el titulo de la tarea, fecha limite y estado en el que se encuentra, dicho tablero cuenta con validaciones en donde no se permite eliminar estados si estos contiene tareas, además se puede arrastrar y soltar las tareas para cambiarlas de estado. 
+
+<img src="https://res.cloudinary.com/dxn0tqsnw/image/upload/v1704832693/brief/quuyivrjeto0tq53xepk.gif" />
 
 ## Demostración: 
 <a href="https://clever-gingersnap-22ec91.netlify.app/">TodoApp</a>
